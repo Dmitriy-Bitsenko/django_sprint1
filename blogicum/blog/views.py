@@ -46,6 +46,7 @@ posts = [
 
 id_post = {i['id']: i for i in posts}
 
+
 def index(request):
     template = 'blog/index.html'
     context = {'posts': reversed(posts)}
